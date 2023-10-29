@@ -1,0 +1,36 @@
+.navbar{
+/* margin-vertical:"0px"; */
+  display: flex; 
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+  height:102px;
+  width:100vw;
+  border-bottom: 0.5px solid #292929;
+  justify-content:space-between;
+  margin-top:-115px;
+  
+}
+.icon{
+  width:50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:60px;
+  margin-left: 10px;
+  background-image: url('logo.png');
+}
+.navbar > div{
+  display: flex;
+  padding:10px 10px 10px 10px;
+  color:#292929;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+ 
+}
+*{
+  .p{
+    font-family:"font-family: 'Open Sans', sans-serif;"
+}
+}
