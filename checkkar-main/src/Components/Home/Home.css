@@ -1,0 +1,16 @@
+.title{
+    width:"1060px";
+    height:"82px";
+    margin-top: "137px";
+    margin-bottom: "137px";
+    background-color:"FFFFFF";
+    margin-left: "110px";
+    margin-right: "110px";
+    border-radius: '10px';
+    box-shadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+   }
+   .text{
+       text-align: 'center';
+       font-Size:"16px";
+   }
+   
