@@ -41,7 +41,16 @@ const RLHF = () => {
       <Header />
       <SideBar />
       <div
-        className="sidebar"
+        style={{
+          width: "1400px",
+          marginLeft: "110px",
+          height: "82px",
+          marginTop: "140px",
+          backgroundColor: "#FFFFFF",
+          borderWidth: "2px",
+          borderRadius: "20px",
+          boxShadow: "2px 2px 4px rgba(0.6, 0.6, 0.6, 0.6)",
+        }}
       >
         <p
           style={{
