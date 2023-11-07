@@ -71,6 +71,13 @@ const RLHF = () => {
     console.log("Selected Circle ID:", circleId);
     setRating(circleId);
   };
+
+  const handleNextsubmit=()=>{
+    setUserPrompt("");
+    setOutput("");
+    setExpectedResponse("");
+    
+  }
   return (
     <div>
       <Header />
@@ -266,7 +273,7 @@ const RLHF = () => {
             width: 90,
             cursor:"pointer"
           }}
-          // onClick={handleNextsubmit()}
+          onClick={handleNextsubmit}
         >
           Next
         </button>
