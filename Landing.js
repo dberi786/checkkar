@@ -7,10 +7,9 @@ const Landing = ({ rounded = false, isToggled, onToggle }) => {
   const slideCX = cx("slider", {
     rounded: rounded,
   });
-  const [text, setText] = useState("");
-
-  const handleChange = (event) => {
-    setText(event.target.value);
+  const [inputValue, setInputValue] = useState("");
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
   };
 
   const [isChecked, setIsChecked] = useState(false);
@@ -18,41 +17,27 @@ const Landing = ({ rounded = false, isToggled, onToggle }) => {
   const handleToggle = () => {
     setIsChecked(!isChecked);
   };
-
+// Repaired one
   return (
     <div className="popup">
       <div className="popup-inner">
         <div>
-          <p
-            style={{
-              fontWeight: "semi-bold",
-              fontSize: "24px",
-              marginTop: "-10px",
-            }}
-          >
-            {" "}
-            Create Prompt-Response Pair Project Name
+          <p className="heading">Create RLHF Project</p>
+          <p className="line">
+            ──────────────────────────────────────────────────
           </p>
-          <p style={{ color: "#dcdcdc", marginTop: "-20px" }}>
-            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          </p>
-          <div>
-            <p style={{ fontSize: "20px" }}>Prompt-Response Pair Project Name</p>
-            <input
-              style={{
-                width: "275px",
-                borderRadius: "4px",
-                borderColor: "gray",
-              }}
-              type="text"
-              id="textInput"
-              value={text} // Bind the input value to the state
-              onChange={handleChange} // Call handleChange function on input change
-            />
+          <p className="heading2">RLHF Project Name</p>
 
-            {/* Adding Toggle Switch Button */}
-            <div>
-              <p style={{ fontWeight: "500" }}>File Format</p>
+          <div>
+            <input
+              type="text"
+              id="myInput"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+          </div>
+         <div>
+              <p style={{ fontWeight: "400",textAlign:"left" }}>File Format</p>
               <div className="toggle-switch">
                 <input
                   type="checkbox"
@@ -63,37 +48,37 @@ const Landing = ({ rounded = false, isToggled, onToggle }) => {
                 <label htmlFor="toggle" className="slider"></label>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
+        
       <div>
         <p
           style={{
-            marginLeft: "-740px",
-            position: "absolute",
-            zIndex: "-1px",
-            fontWeight: "bold",
-            marginTop: "82px",
-            fontSize: "18px",
-          }}
+            marginLeft:"29px",
+             position: "absolute",
+             zIndex: "-1px",
+             fontWeight: "bold",
+             marginTop: "-40px",
+             fontSize: "18px",
+           }}
         >
           CSV
         </p>
 
         <p
           style={{
-            marginLeft: "-670px",
+           marginLeft:"105px",
             position: "absolute",
             zIndex: "-1px",
             fontWeight: "bold",
-            marginTop: "82px",
+            marginTop: "-40px",
             fontSize: "18px",
           }}
         >
           JSON
         </p>
       </div>
+        </div>
+      </div>
+
       <div style={{ marginTop: "200px" }}>
         <button
           style={{
@@ -101,14 +86,16 @@ const Landing = ({ rounded = false, isToggled, onToggle }) => {
             marginLeft: "-215px",
             width: "157px",
             height: "65px",
-            backgroundColor: "0874E4",
+            backgroundColor: "#0874E4",
             fontSize: "25px",
+            color:"white"
           }}
         >
           Create
         </button>
       </div>
     </div>
+    
   );
 };
 
