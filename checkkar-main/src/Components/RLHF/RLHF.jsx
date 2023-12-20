@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import SideBar from "../Sidebar/Sidebar";
 import DotAnimation from "../../DotAnimation/DotAnimation";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const RLHF = () => {
   const [inputHeight, setInputHeight] = useState("37px");
@@ -76,7 +77,7 @@ const RLHF = () => {
     setUserPrompt("");
     setOutput("");
     setExpectedResponse("");
-    
+    setRating();
   }
   return (
     <div>
@@ -263,6 +264,7 @@ const RLHF = () => {
         </button>
       </div>
       <div style={{ marginTop: "350px", marginLeft: "1285px" }}>
+        <Link to='/submit'>
         <button
           style={{
             border: "solid #000 0.5px",
@@ -277,6 +279,7 @@ const RLHF = () => {
         >
           Next
         </button>
+        </Link>
       </div>
       <div>
         <DotAnimation onCircleClick={handleCircleClick}/>
