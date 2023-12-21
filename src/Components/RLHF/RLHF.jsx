@@ -236,6 +236,10 @@ const RLHF = () => {
         <DotAnimation />
 
       </div>
+      <div style={{backgroundColor:"#D9D9D9",width:"42px",height:"40px",marginLeft:"860px",borderRadius:"15px",borderColor:"black",borderWidth:"2px",marginTop:"-130px"}}>
+      <BsFillSendFill  style={{ transform: 'rotate(51deg)',fontSize:"31px",marginTop:"2px"}}
+     />
+      </div>
      
       {/* <div className={`circle ${isClicked ? 'enlarged' : ''}`} onClick={handleClick}>
       Click Me

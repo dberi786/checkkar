@@ -17,7 +17,6 @@ const Landing = ({ rounded = false, isToggled, onToggle }) => {
   const handleToggle = () => {
     setIsChecked(!isChecked);
   };
-// Repaired one
   return (
     <div className="popup">
       <div className="popup-inner">
