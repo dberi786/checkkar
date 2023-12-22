@@ -1,0 +1,137 @@
+.container1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* You can adjust this if needed */
+    width: 85%;
+    padding: 20px; /* Add padding or adjust as needed */
+    
+   margin-left: 99px;
+   margin: right 125px;
+   @media screen and (max-width: 768px) {
+    width: 50%; /* Example adjustment for larger screens */
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 60%; /* Example adjustment for even larger screens */
+  }
+   
+  
+}
+.list{
+    list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.item-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.list1{
+    list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+ font-size:30px;
+ font-weight: bold;
+ font-family: sans-serif;
+}
+
+.center-placeholder {
+    text-align: center;
+   
+  }
+.display_result{
+    width:220px;
+    height:140px;
+    background-color: black;
+    color:white;
+    border-radius:22px;
+    margin-left:30px;
+    @media screen and (max-width: 768px) {
+       margin:10px;
+      }
+    
+      @media screen and (max-width: 600px) {
+        margin:10px;
+     
+      }
+  }
+.container3{ 
+    margin:10px;
+    margin-top:35px;
+    width:auto;
+    margin-left: -1px;
+    margin: right 125px;
+    
+
+  
+   @media screen and (max-width: 768px) {
+    margin:10px;
+    width: 90%; /* Example adjustment for larger screens */
+    display: flex;
+    flex-direction: column; /* Align boxes in a column */
+    align-items: center; /* Center the boxes horizontally in the container */
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 160%; /* Example adjustment for even larger screens */
+     display: flex;
+    flex-direction: column; /* Align boxes in a column */
+    align-items: center; /* Center the boxes horizontally in the container */
+  }
+}
+.icon1{
+  margin-left: 105px;
+}
+.center-placeholder {
+    text-align: center;
+    flex-grow: 1; /* Expand to fill available space */
+  }
+  
+  .custom-textarea {
+    margin-left:-310px;
+    width: 60%; /* Adjust the width as needed */
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px; /* Add space between textarea and search icon on small screens */
+  }
+  .search-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon i {
+    margin-left:390px;
+    margin-top:-90px;
+    font-size: 26px;
+    color:" #1C1B1F";
+  }
+  
+  /* Media query for smaller screens (adjust the screen width as needed) */
+  @media screen and (max-width: 768px) {
+    .custom-textarea {
+      width: 60%; /* Full width for small screens */
+      margin-left:-130px;
+      height:20%;
+    }
+  
+    .search-icon i {
+     margin-left:100px;
+    }
+  }
+  .title1{
+    font-size:28px;
+  }
+  .description{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:500px;
+  }
